@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <title>ChatBot</title>
+</head>
+
+<body>
+    <div id="dial"></div>
+    <div class="form-row">
+        <input type="text" id="message" required autocomplete="off">
+    </div>
+    <button onclick="getMessage()">отправить</button>
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+</html>
